@@ -1,0 +1,24 @@
+{
+	"name": "todoapp-express",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"scripts": {
+		"dev": "nodemon server.js",
+		"start": "node server.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^0.19.2",
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
+		"react-router-dom": "^5.2.0"
+	},
+	"devDependencies": {
+		"random": "^2.2.0",
+		"uuid": "^8.0.0",
+		"uuid-random": "^1.3.0"
+	}
+}
