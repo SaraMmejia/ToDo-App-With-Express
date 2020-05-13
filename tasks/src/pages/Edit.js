@@ -50,7 +50,6 @@ class Edit extends React.Component {
 				title={this.state.title}
 				description={this.state.description}
 				done={this.state.done}
-				done={this.state.done}
 				handleChange={this.handleChange}
 				handleSubmit={this.handleSubmit}
 				updating={true}
