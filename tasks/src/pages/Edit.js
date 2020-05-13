@@ -6,7 +6,7 @@ class Edit extends React.Component {
 	state = {
 		title: "",
 		description: "",
-		done: true,
+		done: false,
 		loading: true,
 	};
 
@@ -15,7 +15,7 @@ class Edit extends React.Component {
 			method: "GET",
 			baseURL: "http://localhost:3000",
 			url: `/${this.props.match.params.id}`,
-			headers: {
+			header: {
 				"Content-Type": "application/json",
 			},
 		}).then(({ data: { title, description, done } }) =>
@@ -49,6 +49,7 @@ class Edit extends React.Component {
 			<Form
 				title={this.state.title}
 				description={this.state.description}
+				done={this.state.done}
 				done={this.state.done}
 				handleChange={this.handleChange}
 				handleSubmit={this.handleSubmit}

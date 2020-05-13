@@ -28,8 +28,8 @@ function Form({
 			/>
 			<input
 				type="checkbox"
-				onChange={this.handleChange}
-				checked={this.state.done}
+				onChange={handleChange}
+				checked={done}
 				name="done"
 				id="done"
 			/>

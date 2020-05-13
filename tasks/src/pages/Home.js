@@ -34,7 +34,8 @@ class Home extends React.Component {
 							<p>{task.description}</p>
 							<p>{task.done ? "Tarea completada" : "Tarea por completar"}</p>
 							<Link to={`/${task.id}`}>View More</Link>
-							<Link to={`/update/${task.id}`}>Update</Link>
+							<Link to={`/update/${task.id}`}>Update Task</Link>
+							<Link to={`/delete/${task.id}`}>Delete Task</Link>
 						</div>
 					))}
 			</div>

@@ -26,6 +26,7 @@ class Details extends React.Component {
 			<div className="task">
 				<h2>{task.title}</h2>
 				<p>{task.description}</p>
+				<p>{task.done ? "Tarea completada" : "Tarea por completar"}</p>
 			</div>
 		);
 	}
