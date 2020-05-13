@@ -34,21 +34,24 @@ class Delete extends React.Component {
 			method: "DELETE",
 			baseURL: "http://localhost:3000",
 			url: `/${this.props.match.params.id}`,
-			header: {
+			headers: {
 				"Content-Type": "application/json",
 			},
-		}).then(() => this.props.match.push("/"));
+		}).then(() => {
+			this.props.history.push("/");
+		});
 	};
 
 	render() {
+		if (this.state.loading) return <p>Loading...</p>;
 		return (
 			<Form
-				title={this.state.title}
-				description={this.state.description}
-				done={this.state.done}
+				title={this.state.task.title}
+				description={this.state.task.description}
+				done={this.state.task.done}
 				handleChange={this.handleChange}
 				handleSubmit={this.handleSubmit}
-				updating={true}
+				deleting={true}
 			/>
 		);
 	}

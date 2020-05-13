@@ -21,7 +21,7 @@ function App() {
 					<Route exact path="/create" component={Create} />
 					<Route exact path="/:id" component={Details} />
 					<Route exact path="/update/:id" component={Edit} />
-					<Route exact path="/:id" component={Delete} />
+					<Route exact path="/delete/:id" component={Delete} />
 				</Switch>
 			</Router>
 		</div>
